@@ -1,0 +1,57 @@
+.advantages-list {
+  max-width: 230px;
+  text-align: center;
+}
+
+.advantages-list__item {
+  margin-top: 98px;
+}
+
+.advantages-list__title {
+  @extend %white-text;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  position: relative;
+
+  &--cow::before {
+    content: '';
+    @extend %before-advantages;
+    background-image: url('/images/images-for-mobile/advantages-cow-for-mobile.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/images/images-for-mobile/advantages-cow-for-mobile@2x.png');
+    }
+  }
+  &--weight::before {
+    content: '';
+    @extend %before-advantages;
+    background-image: url('/images/images-for-mobile/advantages-weight-for-mobile.png');
+    
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/images/images-for-mobile/advantages-weight-for-mobile@2x.png');
+    }
+  }
+  &--ice-cream::before {
+    content: '';
+    @extend %before-advantages;
+    background-image: url('/images/images-for-mobile/advantages-ice-cream-for-mobile.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/images/images-for-mobile/advantages-ice-cream-for-mobile@2x.png');
+    }
+  }
+}
+
+.advantages-list__desc {
+  @extend %white-text;
+  line-height: 1.7;
+  margin-top: 16px;
+}

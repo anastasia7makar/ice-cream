@@ -1,0 +1,39 @@
+.about__title {
+  width: 210px;
+}
+
+.about__image {
+  margin-top: 54px;
+  border-radius: 50%;
+  box-shadow: 0 -22px $yellow;
+}
+
+.about__text-container {
+  width: 220px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about__text {
+  color: $primary-white;
+
+  font-size: 12px;
+  line-height: 1.76;
+  letter-spacing: 0.48px;
+
+  & + & {
+    margin-top: 4px;
+  }
+}
+
+.about__button {
+  @extend %button;
+  @extend %button-dark;
+
+  width: 164px;
+  height: 42px;
+
+  margin-top: 24px;
+}

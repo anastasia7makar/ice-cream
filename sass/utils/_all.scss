@@ -1,0 +1,267 @@
+body {
+  font-family: $family-montserrat;
+  font-size: $mobile-size;
+  font-weight: 400;
+  background-color: $green;
+
+  @media screen and (min-width: 768px) {
+    & {
+      font-size: $tablet-size;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: $desktop-size;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+.container {
+  padding: 12px 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 480px) {
+    & {
+      width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 738px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 1200px;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: currentColor;
+}
+
+.img {
+  display: block;
+}
+
+.overlay {
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 767px;
+  min-height: 70px;
+  background-image: url('/images/images-for-mobile/backgroud-mobile.jpg');
+  background-color: $green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url('/images/images-for-mobile/backgroud-mobile@2x.jpg');
+    }
+  }
+
+  //  @media screen and (min-width: 768px) {
+  //       max-width: 1199px;
+  //       min-height: 400px;
+  //       background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-tablet/hero-overlay-tablet.jpg');
+  //       background-color: $black-for-bg;
+  //       background-repeat: no-repeat;
+  //       background-position: center;
+  //       background-size: cover;
+  //       @media (min-device-pixel-ratio: 2),
+  //           (min-resolution: 192dpi),
+  //           (min-resolution: 2dppx) {
+  //               & {
+  //               background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-tablet/hero-overlay-tablet@2x.jpg');
+  //               }
+  //           }
+  //   }
+
+  //   @media screen and (min-width: 1200px) {
+  //       max-width: 1600px;
+  //       min-height: 600px;
+  //       background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-desktop/hero-overlay-desktop.jpg');
+  //       background-color: $black-for-bg;
+  //       background-repeat: no-repeat;
+  //       background-position: center;
+  //       background-size: cover;
+  //       @media (min-device-pixel-ratio: 2),
+  //           (min-resolution: 192dpi),
+  //           (min-resolution: 2dppx) {
+  //               & {
+  //               background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-desktop/hero-overlay-desktop@2x.jpg');
+  //               }
+  //           }
+  //   }
+}
+
+.section {
+  padding-top: 60px;
+}
+
+.section-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-top: 12px;
+  color: $primary-black;
+  text-align: center;
+  font-family: $family-seymour-one;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  &--white {
+    color: $primary-white;
+  }
+}
+
+.label-title {
+  color: $primary-black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+
+  &--white {
+    color: $primary-white;
+  }
+}
+
+%button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: $black;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+%button-light {
+  border: 2px solid $yellow;
+  background-color: transparent;
+
+  &:hover {
+    border: 2px solid $button-green-effects;
+  }
+
+  &:focus {
+    fill: $white;
+    color: $white;
+    border: 2px solid $button-green-effects;
+  }
+
+  &:disabled {
+    color: $black;
+    border: 2px solid $button-grey;
+  }
+}
+
+%button-dark {
+  background-color: $yellow;
+
+  &:hover {
+    background-color: $button-green-effects;
+  }
+
+  &:focus {
+    fill: $white;
+    color: $white;
+    background-color: $button-green-effects;
+  }
+
+  &:disabled {
+    fill: $black;
+    color: $black;
+    background-color: $button-grey;
+  }
+}
+
+%white-text {
+  color: $primary-white;
+}
+
+%before-products {
+  width: 200px;
+  height: 200px;
+
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -81%);
+  border-radius: 50%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+%before-advantages {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 25px;
+
+  background-color: $yellow;
+  background-size: 72%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
