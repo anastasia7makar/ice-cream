@@ -84,14 +84,14 @@ ul {
   margin-right: auto;
   max-width: 767px;
   min-height: 70px;
-  background-image: url("/images/images-for-mobile/backgroud-mobile.jpg");
+  background-image: url("./images/images-for-mobile/backgroud-mobile.jpg");
   background-color: #84a178;
   background-position: center;
   background-size: 140%;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("/images/images-for-mobile/backgroud-mobile@2x.jpg");
+    background-image: url("./images/images-for-mobile/backgroud-mobile@2x.jpg");
   }
 }
 
@@ -351,7 +351,7 @@ ul {
   margin-right: auto;
   max-width: 480px;
   height: 100%;
-  background-image: url("/images/images-for-mobile/overlay-dots-for-mobile.png");
+  background-image: url("./images/images-for-mobile/overlay-dots-for-mobile.png");
   background-color: #84a178;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -359,7 +359,7 @@ ul {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: url("/images/images-for-mobile/overlay-dots-for-mobile@2x.png");
+    background-image: url("./images/images-for-mobile/overlay-dots-for-mobile@2x.png");
   }
 }
 @media screen and (min-width: 376px) {
