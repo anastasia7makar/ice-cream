@@ -13,14 +13,14 @@
   margin-right: auto;
   max-width: 480px;
   height: 100%;
-  background-image: url('./images/images-for-mobile/overlay-dots-for-mobile.png');
+  background-image: url('/images/images-for-mobile/overlay-dots-for-mobile.png');
   background-color: $green;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 105%;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
-      background-image: url('./images/images-for-mobile/overlay-dots-for-mobile@2x.png');
+      background-image: url('/images/images-for-mobile/overlay-dots-for-mobile@2x.png');
     }
   }
 

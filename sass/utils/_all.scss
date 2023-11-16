@@ -81,14 +81,14 @@ ul {
   margin-right: auto;
   max-width: 767px;
   min-height: 70px;
-  background-image: url('./images/images-for-mobile/backgroud-mobile.jpg');
+  background-image: url('/images/images-for-mobile/backgroud-mobile.jpg');
   background-color: $green;
   background-position: center;
   background-size: 140%;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
-      background-image: url('./images/images-for-mobile/backgroud-mobile@2x.jpg');
+      background-image: url('/images/images-for-mobile/backgroud-mobile@2x.jpg');
     }
   }
 
