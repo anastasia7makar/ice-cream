@@ -510,7 +510,7 @@ ul {
 }
 .products-list__title--ice-cream::before {
   content: "";
-  background-image: url("/images/images-for-mobile/product-ice-cream-for-mobile.png");
+  background-image: url("../images/images-for-mobile/product-ice-cream-for-mobile.png");
   -webkit-box-shadow: 0 11px #aec6a5;
           box-shadow: 0 11px #aec6a5;
   -webkit-filter: drop-shadow(0px 5px 20px rgba(10, 136, 23, 0.25));
@@ -518,12 +518,12 @@ ul {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products-list__title--ice-cream::before {
-    background-image: url("/images/images-for-mobile/product-ice-cream-for-mobile@2x.png");
+    background-image: url("../images/images-for-mobile/product-ice-cream-for-mobile@2x.png");
   }
 }
 .products-list__title--ice-coffee::before {
   content: "";
-  background-image: url("/images/images-for-mobile/product-ice-cream-for-mobile.png");
+  background-image: url("../images/images-for-mobile/product-ice-cream-for-mobile.png");
   -webkit-box-shadow: 0 11px #efd478;
           box-shadow: 0 11px #efd478;
   -webkit-filter: drop-shadow(0px 5px 20px rgba(153, 114, 23, 0.25));
@@ -531,12 +531,12 @@ ul {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products-list__title--ice-coffee::before {
-    background-image: url("/images/images-for-mobile/product-ice-cream-for-mobile@2x.png");
+    background-image: url("../images/images-for-mobile/product-ice-cream-for-mobile@2x.png");
   }
 }
 .products-list__title--milkshakes::before {
   content: "";
-  background-image: url("/images/images-for-mobile/product-milkshake-for-mobile.png");
+  background-image: url("../images/images-for-mobile/product-milkshake-for-mobile.png");
   -webkit-box-shadow: 0 11px #d6936d;
           box-shadow: 0 11px #d6936d;
   -webkit-filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
@@ -544,7 +544,7 @@ ul {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products-list__title--milkshakes::before {
-    background-image: url("/images/images-for-mobile/product-milkshake-for-mobile@2x.png");
+    background-image: url("../images/images-for-mobile/product-milkshake-for-mobile@2x.png");
   }
 }
 
@@ -628,29 +628,29 @@ ul {
 }
 .advantages-list__title--cow::before {
   content: "";
-  background-image: url("/images/images-for-mobile/advantages-cow-for-mobile.png");
+  background-image: url("../images/images-for-mobile/advantages-cow-for-mobile.png");
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .advantages-list__title--cow::before {
-    background-image: url("/images/images-for-mobile/advantages-cow-for-mobile@2x.png");
+    background-image: url("../images/images-for-mobile/advantages-cow-for-mobile@2x.png");
   }
 }
 .advantages-list__title--weight::before {
   content: "";
-  background-image: url("/images/images-for-mobile/advantages-weight-for-mobile.png");
+  background-image: url("../images/images-for-mobile/advantages-weight-for-mobile.png");
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .advantages-list__title--weight::before {
-    background-image: url("/images/images-for-mobile/advantages-weight-for-mobile@2x.png");
+    background-image: url("../images/images-for-mobile/advantages-weight-for-mobile@2x.png");
   }
 }
 .advantages-list__title--ice-cream::before {
   content: "";
-  background-image: url("/images/images-for-mobile/advantages-ice-cream-for-mobile.png");
+  background-image: url("../images/images-for-mobile/advantages-ice-cream-for-mobile.png");
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .advantages-list__title--ice-cream::before {
-    background-image: url("/images/images-for-mobile/advantages-ice-cream-for-mobile@2x.png");
+    background-image: url("../images/images-for-mobile/advantages-ice-cream-for-mobile@2x.png");
   }
 }
 
