@@ -1,7 +1,11 @@
 .hero {
   padding-top: 50px;
 
-  height: calc(100vh - 60px);
+  height: calc(100vh - 24px);
+
+  @media screen and (min-width: 376px) {
+    height: 358px;
+  }
 }
 
 .hero__overlay {
@@ -18,6 +22,12 @@
     & {
       background-image: url('/images/images-for-mobile/overlay-dots-for-mobile@2x.png');
     }
+  }
+
+  @media screen and (min-width: 376px) {
+    margin: 0;
+    background-position: bottom right;
+    background-size: 75%;
   }
 }
 
@@ -87,4 +97,10 @@
   left: 55%;
   bottom: 0;
   transform: translateX(-50%);
+
+  @media screen and (min-width: 376px) {
+    left: 65%;
+    bottom: 35%;
+    transform: translate(-45%, 5%);
+  }
 }

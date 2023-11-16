@@ -41,13 +41,13 @@
               /> -->
               <source
                 srcset="
-                  /images/images-for-mobile/logo-mobile.png    1x,
-                  /images/images-for-mobile/logo-mobile@2x.png 2x
+                  ./images/images-for-mobile/logo-mobile.png    1x,
+                  ./images/images-for-mobile/logo-mobile@2x.png 2x
                 "
                 media="(max-width: 480px)"
               />
               <img
-                src="/images/images-for-mobile/logo-mobile.png"
+                src="./images/images-for-mobile/logo-mobile.png"
                 class="img-logo img"
                 alt="logo"
               />
@@ -75,7 +75,7 @@
             </svg>
           </button>
 
-          <div class="menu js-menu">
+          <div class="menu js-menu" id="menu">
             <ul class="list menu-list">
               <li class="menu-list__item">
                 <a href="/" class="menu-list__link link">Home</a>
@@ -155,13 +155,13 @@
           <picture>
             <source
               srcset="
-                /images/images-for-mobile/ice-cream-for-mobile.png    1x,
-                /images/images-for-mobile/ice-cream-for-mobile@2x.png 2x
+                ./images/images-for-mobile/ice-cream-for-mobile.png    1x,
+                ./images/images-for-mobile/ice-cream-for-mobile@2x.png 2x
               "
               media="(max-width: 480px)"
             />
             <img
-              src="/images/images-for-mobile/ice-cream-for-mobile.png"
+              src="./images/images-for-mobile/ice-cream-for-mobile.png"
               class="img hero__image"
               alt="ice-cream"
             />
@@ -169,8 +169,8 @@
         </div>
       </div>
     </section>
-    <section class="products" id="products">
-      <div class="overlay">
+    <div class="overlay">
+      <section class="products" id="products">
         <div class="container">
           <div class="products__title">
             <p class="label-title">100% natural</p>
@@ -187,7 +187,7 @@
               </div>
               <button type="button" class="products-list__button">
                 <svg width="40px" height="16px" class="product-list__icon">
-                  <use href="/images/sprite.svg#icon-arrow"></use>
+                  <use href="./images/sprite.svg#icon-arrow"></use>
                 </svg>
               </button>
             </li>
@@ -201,7 +201,7 @@
               </div>
               <button type="button" class="products-list__button">
                 <svg width="40px" height="16px" class="product-list__icon">
-                  <use href="/images/sprite.svg#icon-arrow"></use>
+                  <use href="./images/sprite.svg#icon-arrow"></use>
                 </svg>
               </button>
             </li>
@@ -215,14 +215,14 @@
               </div>
               <button type="button" class="products-list__button">
                 <svg width="40px" height="16px" class="product-list__icon">
-                  <use href="/images/sprite.svg#icon-arrow"></use>
+                  <use href="./images/sprite.svg#icon-arrow"></use>
                 </svg>
               </button>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="about section" id="about">
       <div class="container container--center">
@@ -233,13 +233,13 @@
         <picture>
           <source
             srcset="
-              /images/images-for-mobile/cow-for-mobile.png    1x,
-              /images/images-for-mobile/cow-for-mobile@2x.png 2x
+              ./images/images-for-mobile/cow-for-mobile.png    1x,
+              ./images/images-for-mobile/cow-for-mobile@2x.png 2x
             "
             media="(max-width: 480px)"
           />
           <img
-            src="/images/images-for-mobile/cow-for-mobile.png"
+            src="./images/images-for-mobile/cow-for-mobile.png"
             class="img about__image"
             alt="cow"
           />
@@ -266,7 +266,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="advantages">
       <div class="container container--center">
         <h2 class="visually-hidden">Advantages</h2>
         <ul class="list advantages-list">
@@ -297,13 +297,13 @@
           <picture>
             <source
               srcset="
-                /images/images-for-mobile/gallery-image-1-for-mobile.jpg    1x,
-                /images/images-for-mobile/gallery-image-1-for-mobile@2x.jpg 2x
+                ./images/images-for-mobile/gallery-image-1-for-mobile.jpg    1x,
+                ./images/images-for-mobile/gallery-image-1-for-mobile@2x.jpg 2x
               "
               media="(min-width: 480px)"
             />
             <img
-              src="/images/images-for-mobile/gallery-image-1-for-mobile-small.jpg"
+              src="./images/images-for-mobile/gallery-image-1-for-mobile-small.jpg"
               alt="gallery ice-cream"
               class="img gallery__image"
             />
@@ -317,13 +317,13 @@
             <picture>
               <source
                 srcset="
-                  /images/images-for-mobile/customer-reviews-1-for-mobile.jpg    1x,
-                  /images/images-for-mobile/customer-reviews-1-for-mobile@2x.jpg 2x
+                  ./images/images-for-mobile/customer-reviews-1-for-mobile.jpg    1x,
+                  ./images/images-for-mobile/customer-reviews-1-for-mobile@2x.jpg 2x
                 "
                 media="(max-width: 480px)"
               />
               <img
-                src="/images/images-for-mobile/customer-reviews-1-for-mobile.jpg"
+                src="./images/images-for-mobile/customer-reviews-1-for-mobile.jpg"
                 alt="customer"
                 class="img customer-reviews__image"
               />
@@ -428,7 +428,7 @@
               <button type="button" class="contacts__button btn-dark" data-contacts__modal-open>
                 Our Locations
                 <svg class="contacts__arrow" width="12" height="12">
-                  <use href="/images/sprite.svg#icon-arrow-right"></use>
+                  <use href="./images/sprite.svg#icon-arrow-right"></use>
                 </svg>
               </button>
             </li>
@@ -436,7 +436,7 @@
               <button type="button" class="contacts__button btn-light" data-contacts__modal-open-fr>
                 Franchise
                 <svg class="contacts__arrow" width="12" height="12">
-                  <use href="/images/sprite.svg#icon-arrow-right"></use>
+                  <use href="./images/sprite.svg#icon-arrow-right"></use>
                 </svg>
               </button>
             </li>
@@ -507,7 +507,7 @@
       </div>
 
       <div class="footer__copyright">
-        <span class="footer__copyright-text">&#xa9; 2021 - IceCream.   All Rights Reserved. </span>
+        <span class="footer__copyright-text">&#xa9; 2022 - IceCream. All Rights Reserved. </span>
       </div>
     </footer>
     <script
@@ -516,6 +516,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="/js/menu.js"></script>
+    <script type="module" src="./js/menu.js"></script>
   </body>
 </html>

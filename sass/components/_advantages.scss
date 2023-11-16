@@ -1,10 +1,16 @@
+.advantages {
+  padding-top: 112px;
+}
+
 .advantages-list {
   max-width: 230px;
   text-align: center;
 }
 
 .advantages-list__item {
-  margin-top: 98px;
+  & + & {
+    margin-top: 98px;
+  }
 }
 
 .advantages-list__title {
@@ -30,7 +36,7 @@
     content: '';
     @extend %before-advantages;
     background-image: url('/images/images-for-mobile/advantages-weight-for-mobile.png');
-    
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
