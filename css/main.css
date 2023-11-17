@@ -341,7 +341,7 @@ ul {
 .hero {
   padding-top: 28px;
   margin: 0 auto;
-  height: calc(100vh - 217px);
+  height: 448px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
