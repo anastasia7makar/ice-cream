@@ -32,6 +32,7 @@ ul {
   padding: 12px 20px;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 
   &--center {
     display: flex;
@@ -39,9 +40,9 @@ ul {
     align-items: center;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     & {
-      width: 480px;
+      max-width: 480px;
     }
   }
 

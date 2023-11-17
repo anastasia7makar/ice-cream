@@ -70,7 +70,7 @@
     content: '';
     @extend %before-products;
 
-    background-image: url('../images/images-for-mobile/product-ice-cream-for-mobile.png');
+    background-image: url('../images/images-for-mobile/product-ice-coffee-for-mobile.png');
 
     box-shadow: 0 11px $product-orange;
 
@@ -79,7 +79,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/images-for-mobile/product-ice-cream-for-mobile@2x.png');
+      background-image: url('../images/images-for-mobile/product-ice-coffee-for-mobile@2x.png');
     }
   }
 

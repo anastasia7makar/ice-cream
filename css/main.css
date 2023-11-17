@@ -30,6 +30,7 @@ ul {
   padding: 12px 20px;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 }
 .container--center {
   display: -webkit-box;
@@ -43,9 +44,9 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -338,11 +339,13 @@ ul {
 
 .hero {
   padding-top: 50px;
+  margin: 0 auto;
   height: calc(100vh - 24px);
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
     height: 358px;
+    width: 480px;
   }
 }
 
@@ -362,12 +365,16 @@ ul {
     background-image: url("../images/images-for-mobile/overlay-dots-for-mobile@2x.png");
   }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 480px) {
   .hero__overlay {
     margin: 0;
     background-position: bottom right;
-    background-size: 75%;
+    background-size: 65%;
   }
+}
+
+.hero__container {
+  position: relative;
 }
 
 .hero__text-container {
@@ -434,12 +441,12 @@ ul {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero__image {
-    left: 65%;
-    bottom: 35%;
-    -webkit-transform: translate(-45%, 5%);
-            transform: translate(-45%, 5%);
+    width: 217px;
+    left: 70%;
+    -webkit-transform: translateX(-45%);
+            transform: translateX(-45%);
   }
 }
 
@@ -523,7 +530,7 @@ ul {
 }
 .products-list__title--ice-coffee::before {
   content: "";
-  background-image: url("../images/images-for-mobile/product-ice-cream-for-mobile.png");
+  background-image: url("../images/images-for-mobile/product-ice-coffee-for-mobile.png");
   -webkit-box-shadow: 0 11px #efd478;
           box-shadow: 0 11px #efd478;
   -webkit-filter: drop-shadow(0px 5px 20px rgba(153, 114, 23, 0.25));
@@ -531,7 +538,7 @@ ul {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products-list__title--ice-coffee::before {
-    background-image: url("../images/images-for-mobile/product-ice-cream-for-mobile@2x.png");
+    background-image: url("../images/images-for-mobile/product-ice-coffee-for-mobile@2x.png");
   }
 }
 .products-list__title--milkshakes::before {
