@@ -21,32 +21,37 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="header__nav">
           <a href="/" class="logo">
             <picture>
-              <!-- <source
-                srcset="
-                  ./images/img-for-desktop/img-team-desktop-1.jpg    1x,
-                  ./images/img-for-desktop/img-team-desktop-1@2x.jpg 2x
-                "
-                media="(min-width: 1200px)"
-              /> -->
               <source
                 srcset="
-                  images/images-for-tablet/logo-tablet.png    1x,
-                  images/images-for-tablet/logo-tablet@2x.png 2x
+                  ./images/images-for-desktop/header/logo-desktop.png    1x,
+                  ./images/images-for-desktop/header/logo-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/images-for-tablet/header/logo-tablet.png    1x,
+                  ./images/images-for-tablet/header/logo-tablet@2x.png 2x
                 "
                 media="(min-width: 481px)"
               />
               <source
                 srcset="
-                  images/images-for-mobile/logo-mobile.png    1x,
-                  images/images-for-mobile/logo-mobile@2x.png 2x
+                  ./images/images-for-mobile/header/logo-mobile.png    1x,
+                  ./images/images-for-mobile/header/logo-mobile@2x.png 2x
                 "
                 media="(max-width: 480px)"
               />
-              <img src="images/images-for-mobile/logo-mobile.png" class="img-logo img" alt="logo" />
+              <img
+                src=""
+                src="./images/images-for-mobile/header/logo-mobile.png"
+                class="img-logo img"
+                alt="logo"
+              />
             </picture>
           </a>
 
@@ -87,13 +92,19 @@
               </li>
             </ul>
 
-            <button class="button-open-modal">
+            <button class="button-open-modal button-open-modal--mobile">
               <span class="button-open-modal__text">Buy now</span>
               <svg width="12" height="12">
                 <use href="./images/sprite.svg#icon-arrow-right"></use>
               </svg>
             </button>
           </div>
+          <button class="button-open-modal button-open-modal--tablet">
+            <span class="button-open-modal__text">Buy now</span>
+            <svg width="12" height="12">
+              <use href="./images/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -121,50 +132,83 @@
               </ul>
             </div>
 
-            <!-- <ul class="list list-branches">
-              <li class="list-branches__item">
-                <p class="list-branches__text">
-                  <span class="list-branches__text--accent">16</span> cafes
+            <ul class="list achievement-list">
+              <li class="achievement-list__item">
+                <p class="achievement-list__text">
+                  <span class="achievement-list__text--accent">16</span> cafes
                 </p>
               </li>
-              <li class="list-branches__item">
-                <p class="list-branches__text">
-                  <span class="list-branches__text--accent">23</span> food trucks
+              <li class="achievement-list__item">
+                <p class="achievement-list__text">
+                  <span class="achievement-list__text--accent">23</span> food trucks
                 </p>
               </li>
-            </ul> -->
+            </ul>
           </div>
-          <!-- <img
-            src="./images/images-for-desktop/many-ice-cream.png"
-            alt="many ice-cream"
-            class="taste-image img"
-          />
-          <div class="taste">
-            <p class="taste-text">
-              Indulge in a scoop of ice cream made with passion and treat your taste buds to an
-              unforgettable experience!
-            </p>
-            <svg width="40" height="16">
-              <use href="./images/sprite.svg#icon-arrow"></use>
-            </svg>
-          </div> -->
+
+          <div class="hero__taste-container">
+            <picture>
+              <source
+                srcset="
+                  ./images/images-for-tablet/hero/many-ice-cream-tablet.png    1x,
+                  ./images/images-for-tablet/hero/many-ice-cream-tablet@2x.png 2x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+                width="152"
+              />
+
+              <source
+                srcset="
+                  ./images/images-for-desktop/hero/many-ice-cream-desktop.png    1x,
+                  ./images/images-for-desktop/hero/many-ice-cream-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+                width="225"
+              />
+              <img
+                src="./images/images-for-tablet/hero/many-ice-cream-tablet.png"
+                class="img hero__taste-image"
+                alt="many ice-cream"
+              />
+            </picture>
+            <div class="hero__taste">
+              <p class="hero__taste-text">
+                Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+                unforgettable experience!
+              </p>
+              <a href="#about" class="hero__taste-link">
+                <svg class="hero__taste-icon" width="40" height="16">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
           <picture>
             <source
               srcset="
-                ./images/images-for-mobile/ice-cream-for-mobile.png    1x,
-                ./images/images-for-mobile/ice-cream-for-mobile@2x.png 2x
+                ./images/images-for-mobile/hero/ice-cream-mobile.png    1x,
+                ./images/images-for-mobile/hero/ice-cream-mobile@2x.png 2x
               "
               media="(max-width: 480px)"
             />
             <source
               srcset="
-                ./images/images-for-tablet/ice-cream-for-tablet.png    1x,
-                ./images/images-for-tablet/ice-cream-for-tablet@2x.png 2x
+                ./images/images-for-tablet/hero/ice-cream-tablet.png 1x,
+                ./images/images-for-tablet/hero/ice-cream-tablet.png 2x
               "
-              media="(min-width: 481px)"
+              media="(min-width: 481px) and (max-width: 1199px)"
+              width="268"
+            />
+            <source
+              srcset="
+                ./images/images-for-desktop/hero/ice-cream-desktop.png 1x,
+                ./images/images-for-desktop/hero/ice-cream-desktop.png 2x
+              "
+              media="(min-width: 1200px)"
+              width="456"
             />
             <img
-              src="./images/images-for-mobile/ice-cream-for-mobile.png"
+              src="./images/images-for-mobile/hero/ice-cream-mobile.png"
               class="img hero__image"
               alt="ice-cream"
             />
@@ -233,39 +277,59 @@
           <p class="label-title label-title--white">tradition and love</p>
           <h2 class="title title--white">how it`s made?</h2>
         </div>
-        <picture>
-          <source
-            srcset="
-              ./images/images-for-mobile/cow-for-mobile.png    1x,
-              ./images/images-for-mobile/cow-for-mobile@2x.png 2x
-            "
-            media="(max-width: 480px)"
-          />
-          <img
-            src="./images/images-for-mobile/cow-for-mobile.png"
-            class="img about__image"
-            alt="cow"
-          />
-        </picture>
-        <div class="about__text-container">
-          <p class="about__text">
-            Ice is a place where you will become not only a little happier, but also healthier.
-            Health is the main value for us, and we follow it when creating our handmade desserts.
-          </p>
-          <p class="about__text">
-            We use traditional recipes and 100% natural ingredients. Our products are so natural
-            that they can be given to children from the age of three years. Sweets lovers can expect
-            55 types of ice cream, 15 types of coffee and 23 milkshakes.
-          </p>
-          <p class="about__text">This is enough to choose ice cream and coffee for any mood!</p>
-        </div>
+        <div class="about__container">
+          <picture>
+            <source
+              srcset="
+                ./images/images-for-mobile/about/cow-about-mobile.png    1x,
+                ./images/images-for-mobile/about/cow-about-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/images-for-tablet/about/cow-about-tablet.png    1x,
+                ./images/images-for-tablet/about/cow-about-tablet@2x.png 2x
+              "
+              media="(min-width: 768px) and (max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/images-for-desktop/about/cow-about-desktop.png    1x,
+                ./images/images-for-desktop/about/cow-about-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-        <button type="button" class="about__button">
-          <span>Read more</span>
-          <svg width="12" height="12">
-            <use href="./images/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
+            <img
+              src="./images/images-for-mobile/about/cow-about-mobile.png"
+              class="img about__image"
+              alt="cow"
+            />
+          </picture>
+          <div class="about__container--center">
+            <div class="about__text-container">
+              <p class="about__text">
+                Ice is a place where you will become not only a little happier, but also healthier.
+                Health is the main value for us, and we follow it when creating our handmade
+                desserts.
+              </p>
+              <p class="about__text">
+                We use traditional recipes and 100% natural ingredients. Our products are so natural
+                that they can be given to children from the age of three years. Sweets lovers can
+                expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.
+              </p>
+              <p class="about__text">This is enough to choose ice cream and coffee for any mood!</p>
+            </div>
+
+            <button type="button" class="about__button">
+              <span>Read more</span>
+              <svg width="12" height="12">
+                <use href="./images/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -300,13 +364,30 @@
           <picture>
             <source
               srcset="
-                ./images/images-for-mobile/gallery-image-1-for-mobile.jpg    1x,
-                ./images/images-for-mobile/gallery-image-1-for-mobile@2x.jpg 2x
+                ./images/images-for-mobile/gallery/gallery-image-1-mobile.jpg    1x,
+                ./images/images-for-mobile/gallery/gallery-image-1-mobile@2x.jpg 2x
               "
-              media="(min-width: 480px)"
+              media="(max-width: 767px)"
             />
+
+            <source
+              srcset="
+                ./images/images-for-tablet/gallery/gallery-image-1-tablet.jpg    1x,
+                ./images/images-for-tablet/gallery/gallery-image-1-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px) and (max-width: 1199px)"
+            />
+
+            <source
+              srcset="
+                ./images/images-for-desktop/gallery/gallery-image-1-desktop.jpg    1x,
+                ./images/images-for-desktop/gallery/gallery-image-1-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+
             <img
-              src="./images/images-for-mobile/gallery-image-1-for-mobile-small.jpg"
+              src="./images/images-for-mobile/gallery/gallery-image-1-mobile.jpg"
               alt="gallery ice-cream"
               class="img gallery__image"
             />
@@ -318,15 +399,9 @@
           <h2 class="visually-hidden">Customer Reviews</h2>
           <div class="customer-reviews__image-container">
             <picture>
-              <source
-                srcset="
-                  ./images/images-for-mobile/customer-reviews-1-for-mobile.jpg    1x,
-                  ./images/images-for-mobile/customer-reviews-1-for-mobile@2x.jpg 2x
-                "
-                media="(max-width: 480px)"
-              />
+              <source srcset="./images/customer-image.png 1x, ./images/customer-image@2x.png 2x" />
               <img
-                src="./images/images-for-mobile/customer-reviews-1-for-mobile.jpg"
+                src="./images/customer-image.png"
                 alt="customer"
                 class="img customer-reviews__image"
               />
@@ -447,8 +522,8 @@
         </div>
       </section>
     </div>
-    <footer class="footer section">
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer__container">
         <div class="footer__text">
           <p class="footer__text-title">homemade ice cream made</p>
           <p class="footer__text-slog">with passion</p>
