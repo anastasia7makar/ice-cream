@@ -3,10 +3,13 @@
 }
 
 .products-list {
-  @media screen and (min-width: 376px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 376px) and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
@@ -32,9 +35,26 @@
     background-color: $product-brown;
   }
 
-  @media screen and (min-width: 376px) {
+  @media screen and (min-width: 376px) and (max-width: 767px) {
     max-width: 320px;
     min-height: 428px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 224px;
+    min-height: 428px;
+    padding: 0 26px;
+    & + & {
+      margin-left: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    min-height: 536px;
+    & + & {
+      margin-left: 29px;
+    }
   }
 }
 
@@ -49,11 +69,16 @@
   letter-spacing: 0.8px;
   text-transform: uppercase;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+
   &--ice-cream::before {
     content: '';
     @extend %before-products;
 
-    background-image: url('../images/images-for-mobile/product-ice-cream-for-mobile.png');
+    background-image: url('../images/images-for-mobile/products/product-ice-cream-mobile.png');
 
     box-shadow: 0 11px $product-green;
 
@@ -62,7 +87,27 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/images-for-mobile/product-ice-cream-for-mobile@2x.png');
+      background-image: url('../images/images-for-mobile/products/product-ice-cream-mobile@2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/images-for-tablet/products/product-ice-cream-tablet.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/images-for-tablet/products/product-ice-cream-tablet@2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/images-for-desktop/products/product-ice-cream-desktop.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/images-for-desktop/products/product-ice-cream-desktop@2x.png');
+      }
     }
   }
 
@@ -70,7 +115,7 @@
     content: '';
     @extend %before-products;
 
-    background-image: url('../images/images-for-mobile/product-ice-coffee-for-mobile.png');
+    background-image: url('../images/images-for-mobile/products/product-ice-coffee-mobile.png');
 
     box-shadow: 0 11px $product-orange;
 
@@ -79,7 +124,27 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/images-for-mobile/product-ice-coffee-for-mobile@2x.png');
+      background-image: url('../images/images-for-mobile/products/product-ice-coffee-mobile@2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/images-for-tablet/products/product-ice-coffee-tablet.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/images-for-tablet/products/product-ice-coffee-tablet@2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/images-for-desktop/products/product-ice-coffee-desktop.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/images-for-desktop/products/product-ice-coffee-desktop@2x.png');
+      }
     }
   }
 
@@ -87,7 +152,7 @@
     content: '';
     @extend %before-products;
 
-    background-image: url('../images/images-for-mobile/product-milkshake-for-mobile.png');
+    background-image: url('../images/images-for-mobile/products/product-milkshake-mobile.png');
 
     box-shadow: 0 11px $product-brown;
 
@@ -96,21 +161,47 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/images-for-mobile/product-milkshake-for-mobile@2x.png');
+      background-image: url('../images/images-for-mobile/products/product-milkshake-mobile@2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/images-for-tablet/products/product-milkshake-tablet.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/images-for-tablet/products/product-milkshake-tablet@2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/images-for-desktop/products/product-milkshake-desktop.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/images-for-desktop/products/product-milkshake-desktop@2x.png');
+      }
     }
   }
 }
 
 .products-list__description {
-  width: 200px;
+  max-width: 200px;
   color: $primary-black;
   margin-top: 40px;
 
   text-align: center;
-  font-size: 14px;
+  font-size: $tablet-size;
   font-weight: 400;
   line-height: 1.76;
   letter-spacing: 0.56px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: $desktop-size;
+    letter-spacing: 0.64px;
+    margin-top: 66px;
+  }
 }
 
 .products-list__button {
@@ -120,6 +211,14 @@
 
   background-color: transparent;
   border: transparent;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
 }
 
 .products-list__icon {

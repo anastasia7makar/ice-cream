@@ -1,5 +1,23 @@
+.footer {
+  padding-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer__text {
   max-width: 232px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 352px;
+  }
 }
 
 .footer__text-title {
@@ -7,6 +25,11 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1.04px;
+  }
 }
 
 .footer__text-slog {
@@ -15,10 +38,18 @@
   font-weight: 700;
   letter-spacing: 1.36px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 8px;
+    font-size: 48px;
+    letter-spacing: 2.88px;
+  }
 }
 
 .footer__contact {
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .footer__social-list {
@@ -30,6 +61,12 @@
   & + & {
     margin-left: 20px;
   }
+
+  @media screen and (min-width: 768px) {
+    & + & {
+      margin-left: 30px;
+    }
+  }
 }
 
 .footer__contact-tel {
@@ -40,6 +77,10 @@
 
   font-weight: 700;
   line-height: 1.86;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 34px;
+  }
 }
 
 .footer__contact-link {
@@ -53,13 +94,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    min-height: 50px;
+  }
 }
 
 .footer__copyright-text {
-  width: 154px;
+  max-width: 154px;
   color: $grey-for-footer-text;
 
   font-size: 14px;
   font-weight: 700;
   line-height: 1.52;
+
+  @media screen and (min-width: 768px) {
+    max-width: 300px;
+  }
 }

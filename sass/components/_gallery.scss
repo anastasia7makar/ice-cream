@@ -1,5 +1,11 @@
 .gallery {
-  background: linear-gradient(to top, transparent 70%, $green 30%);
+  padding-top: 32px;
+  background: linear-gradient(to top, transparent 60%, $green 40%);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    background: linear-gradient(to top, transparent 50%, $green 50%);
+  }
 }
 
 .gallery__container {
@@ -9,7 +15,11 @@
 
 .gallery__image {
   border-radius: 8px;
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 450px) and (max-width: 767px) {
     width: 440px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
   }
 }

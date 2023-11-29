@@ -4,8 +4,15 @@
 
 .contacts__list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .contacts__item-title {
@@ -24,15 +31,26 @@
 
 .contacts__item {
   max-width: 280px;
-  margin-bottom: 16px;
   padding: 40px 32px;
   text-align: start;
   line-height: 1.86;
   font-weight: 500;
   background-color: $primary-white;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-
   border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 224px;
+    min-height: 531px;
+
+    & + & {
+      margin-left: 16px;
+    }
+  }
 
   &--indent {
     margin-top: 8px;
@@ -51,7 +69,9 @@
   }
 
   &:last-child {
-    margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -85,14 +105,28 @@
 
 .contacts__modal-list {
   margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contacts__modal-item {
   display: flex;
   justify-content: center;
 
-  & + & {
-    margin-top: 16px;
+  @media screen and (max-width: 767px) {
+    & + & {
+      margin-top: 16px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & + & {
+      margin-left: 16px;
+    }
   }
 }
 
