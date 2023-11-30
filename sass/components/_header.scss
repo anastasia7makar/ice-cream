@@ -53,6 +53,10 @@
   @media screen and (min-width: 768px) {
     top: 12px;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .menu-button--close {
@@ -61,6 +65,9 @@
 
   &.is-open {
     display: block;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -73,6 +80,10 @@
 
   &.is-open {
     display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -110,9 +121,9 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    position: static;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   position: static;
+  // }
 }
 
 .menu-list {

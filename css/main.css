@@ -4,6 +4,9 @@ body {
   font-weight: 400;
   background-color: #84a178;
 }
+body.is-hidden {
+  overflow-y: hidden;
+}
 @media screen and (min-width: 768px) {
   body {
     font-size: 14px;
@@ -340,6 +343,11 @@ ul {
     top: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .menu-button--close {
   display: none;
@@ -347,6 +355,11 @@ ul {
 }
 .menu-button--close.is-open {
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .menu-button--close.is-open {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu-button--close {
@@ -359,6 +372,11 @@ ul {
 }
 .menu-button--open.is-open {
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  .menu-button--open.is-open {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-button--open {
@@ -402,11 +420,6 @@ ul {
   }
   .menu.is-open.menu-button__close {
     display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .menu {
-    position: static;
   }
 }
 
@@ -1010,15 +1023,21 @@ ul {
   }
 }
 
+.about__container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
 @media screen and (min-width: 768px) {
-  .about__container {
+  .about__content-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 80px;
   }
 }
-.about__container--center {
+.about__content-container--center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1031,7 +1050,7 @@ ul {
           align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .about__container--center {
+  .about__content-container--center {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1052,6 +1071,14 @@ ul {
   .about__image {
     margin-right: 36px;
     margin-top: 18px;
+    -webkit-box-shadow: 0 -26px #f8d24e;
+            box-shadow: 0 -26px #f8d24e;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__image {
+    -webkit-box-shadow: 0 -36px #f8d24e;
+            box-shadow: 0 -36px #f8d24e;
   }
 }
 
