@@ -1023,10 +1023,12 @@ ul {
   }
 }
 
-.about__container {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+@media screen and (min-width: 1200px) {
+  .about__container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 
 @media screen and (min-width: 768px) {

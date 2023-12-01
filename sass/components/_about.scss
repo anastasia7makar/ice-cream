@@ -5,7 +5,9 @@
 }
 
 .about__container {
-  align-items: start;
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+  }
 }
 
 .about__content-container {
@@ -31,7 +33,6 @@
 
   @media screen and (max-width: 767px) {
     margin-top: 54px;
-
   }
 
   @media screen and (min-width: 768px) {

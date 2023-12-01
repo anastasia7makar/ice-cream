@@ -9,8 +9,6 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
     closeMenuBtn.classList.toggle('is-open');
-    console.log(window.innerWidth);
-    console.log(isMenuOpen);
 
     if (window.innerWidth < 1200 && isMenuOpen === false) {
       body.classList.add('is-hidden');
