@@ -9,7 +9,14 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 480px) {
+    align-items: center;
+  }
 }
 
 .footer__text {

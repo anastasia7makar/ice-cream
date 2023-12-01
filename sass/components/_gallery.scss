@@ -15,6 +15,7 @@
 
 .gallery__image {
   border-radius: 8px;
+  width: 100%;
   @media screen and (min-width: 450px) and (max-width: 767px) {
     width: 440px;
   }
