@@ -4,6 +4,10 @@
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+  }
 }
 
 .footer__container {
@@ -25,6 +29,10 @@
   @media screen and (min-width: 768px) {
     max-width: 352px;
   }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 504px;
+  }
 }
 
 .footer__text-title {
@@ -36,6 +44,12 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
     letter-spacing: 1.04px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
   }
 }
 
@@ -50,6 +64,12 @@
     margin-top: 8px;
     font-size: 48px;
     letter-spacing: 2.88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 14px;
+    font-size: 58px;
+    letter-spacing: 3.48px;
   }
 }
 
@@ -88,6 +108,11 @@
   @media screen and (min-width: 768px) {
     margin-top: 34px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+    letter-spacing: 0.32px;
+  }
 }
 
 .footer__contact-link {
@@ -118,5 +143,11 @@
 
   @media screen and (min-width: 768px) {
     max-width: 300px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.24px;
   }
 }

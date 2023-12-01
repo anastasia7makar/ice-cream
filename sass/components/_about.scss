@@ -1,3 +1,7 @@
+.about {
+  padding-top: 60px;
+}
+
 .about__title {
   @media screen and (max-width: 767px) {
     width: 210px;
@@ -43,6 +47,7 @@
 
   @media screen and (min-width: 1200px) {
     box-shadow: 0 -36px $yellow;
+    margin-right: 109px;
   }
 }
 

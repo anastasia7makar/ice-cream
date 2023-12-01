@@ -1,5 +1,11 @@
 .contacts {
   background: linear-gradient(to bottom, transparent 28%, $green 28% 100%);
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
 }
 
 .contacts__list {
@@ -27,6 +33,15 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.48px;
+
+  @media screen and (min-width: 768px) {
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 4px 14px;
+  }
 }
 
 .contacts__item {
@@ -46,9 +61,20 @@
   @media screen and (min-width: 768px) {
     max-width: 224px;
     min-height: 531px;
+    padding: 40px 24px;
 
     & + & {
       margin-left: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 368px;
+    min-height: 542px;
+    padding: 40px;
+
+    & + & {
+      margin-left: 32px;
     }
   }
 
@@ -58,6 +84,7 @@
 
   &--black {
     color: $primary-black;
+    letter-spacing: 0.64px;
   }
 
   &--grey {
@@ -66,6 +93,12 @@
 
   &--brown {
     color: $product-brown;
+    letter-spacing: 0.64px;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   &:last-child {
@@ -77,10 +110,17 @@
 
 .contacts__item-header {
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+  }
 }
 
 .item-header {
   letter-spacing: 0.48px;
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .contacts__item-header::after,
@@ -90,6 +130,21 @@
   margin: 24px 0;
   content: '';
   border-bottom: 1px solid $grey-for-line-after;
+
+  @media screen and (min-width: 1200px) {
+    margin: 32px 0;
+  }
+}
+
+.contacts__item-link {
+  & + & {
+    margin-top: 6px;
+  }
+  @media screen and (min-width: 1200px) {
+    & + & {
+      margin-top: 4px;
+    }
+  }
 }
 
 .contacts__link {
@@ -98,8 +153,8 @@
   line-height: 1.6;
   text-decoration: none;
 
-  & + & {
-    margin-top: 6px;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.5;
   }
 }
 
@@ -110,6 +165,10 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
   }
 }
 

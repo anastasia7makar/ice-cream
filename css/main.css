@@ -125,10 +125,6 @@ ul {
   }
 }
 
-.section {
-  padding-top: 60px;
-}
-
 .section-title {
   margin-left: auto;
   margin-right: auto;
@@ -561,7 +557,7 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: url("../images/images-for-tablet/background-tablet@2x.png");
+    background-image: url("../images/images-for-tablet/hero/dots-tablet@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1017,6 +1013,10 @@ ul {
   fill: #131313;
 }
 
+.about {
+  padding-top: 60px;
+}
+
 @media screen and (max-width: 767px) {
   .about__title {
     width: 210px;
@@ -1081,6 +1081,7 @@ ul {
   .about__image {
     -webkit-box-shadow: 0 -36px #f8d24e;
             box-shadow: 0 -36px #f8d24e;
+    margin-right: 109px;
   }
 }
 
@@ -1135,7 +1136,22 @@ ul {
 }
 
 .advantages {
-  padding-top: 112px;
+  padding-top: 116px;
+}
+@media screen and (min-width: 480px) {
+  .advantages {
+    padding-top: 126px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 142px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 150px;
+  }
 }
 
 .advantages-list {
@@ -1146,9 +1162,16 @@ ul {
     max-width: 230px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages-list {
     max-width: 616px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1160,12 +1183,20 @@ ul {
     margin-top: 98px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages-list__item {
-    max-width: 152px;
+    min-width: 152px;
   }
   .advantages-list__item + .advantages-list__item {
     margin-left: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list__item {
+    max-width: 262px;
+  }
+  .advantages-list__item + .advantages-list__item {
+    margin-left: 190px;
   }
 }
 
@@ -1175,6 +1206,18 @@ ul {
   letter-spacing: 1.44px;
   text-transform: uppercase;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list__title {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list__title {
+    font-size: 58px;
+    letter-spacing: 2.32px;
+  }
 }
 .advantages-list__title--cow::before {
   content: "";
@@ -1206,6 +1249,11 @@ ul {
     background: linear-gradient(to top, transparent 50%, #84a178 50%);
   }
 }
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-top: 80px;
+  }
+}
 
 .gallery__container {
   display: -webkit-box;
@@ -1225,9 +1273,14 @@ ul {
     width: 440px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery__image {
     border-radius: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__image {
+    border-radius: 24px;
   }
 }
 
@@ -1243,6 +1296,16 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .customer-reviews {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer-reviews {
+    padding-top: 140px;
+  }
 }
 
 .customer-reviews__image {
@@ -1292,6 +1355,13 @@ ul {
     letter-spacing: 0.56px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .customer-reviews__comment {
+    max-width: 968px;
+    min-height: 138px;
+    letter-spacing: 0.64px;
+  }
+}
 
 .customer-reviews__name {
   margin-top: 32px;
@@ -1309,6 +1379,13 @@ ul {
 .contacts {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(28%, transparent), color-stop(28%, #84a178));
   background: linear-gradient(to bottom, transparent 28%, #84a178 28% 100%);
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
 }
 
 .contacts__list {
@@ -1350,6 +1427,17 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.48px;
 }
+@media screen and (min-width: 768px) {
+  .contacts__item-title {
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item-title {
+    padding: 4px 14px;
+  }
+}
 
 .contacts__item {
   max-width: 280px;
@@ -1371,9 +1459,20 @@ ul {
   .contacts__item {
     max-width: 224px;
     min-height: 531px;
+    padding: 40px 24px;
   }
   .contacts__item + .contacts__item {
     margin-left: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    max-width: 368px;
+    min-height: 542px;
+    padding: 40px;
+  }
+  .contacts__item + .contacts__item {
+    margin-left: 32px;
   }
 }
 .contacts__item--indent {
@@ -1381,12 +1480,18 @@ ul {
 }
 .contacts__item--black {
   color: #131313;
+  letter-spacing: 0.64px;
 }
 .contacts__item--grey {
   color: #ababab;
 }
 .contacts__item--brown {
   color: #d6936d;
+  letter-spacing: 0.64px;
+}
+.contacts__item--brown:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .contacts__item:last-child {
@@ -1397,11 +1502,15 @@ ul {
 .contacts__item-header {
   margin-top: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .contacts__item-header {
+    margin-top: 32px;
+  }
+}
 
 .item-header {
   letter-spacing: 0.48px;
 }
-
 .contacts__item-header::after,
 .contacts__item-body::after {
   display: block;
@@ -1410,6 +1519,21 @@ ul {
   content: "";
   border-bottom: 1px solid #e1e1e1;
 }
+@media screen and (min-width: 1200px) {
+  .contacts__item-header::after,
+  .contacts__item-body::after {
+    margin: 32px 0;
+  }
+}
+
+.contacts__item-link + .contacts__item-link {
+  margin-top: 6px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item-link + .contacts__item-link {
+    margin-top: 4px;
+  }
+}
 
 .contacts__link {
   color: #131313;
@@ -1417,8 +1541,10 @@ ul {
   line-height: 1.6;
   text-decoration: none;
 }
-.contacts__link + .contacts__link {
-  margin-top: 6px;
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    line-height: 1.5;
+  }
 }
 
 .contacts__modal-list {
@@ -1433,6 +1559,11 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__modal-list {
+    margin-top: 60px;
   }
 }
 
@@ -1469,6 +1600,11 @@ ul {
     padding-top: 40px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+  }
+}
 
 .footer__container {
   display: -webkit-box;
@@ -1502,6 +1638,11 @@ ul {
     max-width: 352px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    min-width: 504px;
+  }
+}
 
 .footer__text-title {
   color: #fcfcfc;
@@ -1513,6 +1654,13 @@ ul {
   .footer__text-title {
     font-size: 26px;
     letter-spacing: 1.04px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text-title {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
   }
 }
 
@@ -1528,6 +1676,13 @@ ul {
     margin-top: 8px;
     font-size: 48px;
     letter-spacing: 2.88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text-slog {
+    margin-top: 14px;
+    font-size: 58px;
+    letter-spacing: 3.48px;
   }
 }
 
@@ -1572,6 +1727,12 @@ ul {
     margin-top: 34px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__contact-tel {
+    margin-top: 40px;
+    letter-spacing: 0.32px;
+  }
+}
 
 .footer__contact-link {
   margin-left: 4px;
@@ -1608,5 +1769,12 @@ ul {
 @media screen and (min-width: 768px) {
   .footer__copyright-text {
     max-width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__copyright-text {
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.24px;
   }
 }/*# sourceMappingURL=main.css.map */

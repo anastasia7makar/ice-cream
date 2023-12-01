@@ -3,6 +3,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 140px;
+  }
 }
 
 .customer-reviews__image {
@@ -38,6 +46,12 @@
     font-weight: 500;
     line-height: 1.86;
     letter-spacing: 0.56px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 968px;
+    min-height: 138px;
+    letter-spacing: 0.64px;
   }
 }
 
