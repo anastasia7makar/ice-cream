@@ -32,6 +32,10 @@ ul {
   margin: 0;
 }
 
+@mixin transition($params) {
+  transition: $params 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   padding: 0 20px;
   margin-left: auto;
@@ -182,6 +186,7 @@ ul {
 %button-light {
   border: 2px solid $yellow;
   background-color: transparent;
+  @include transition(border);
 
   &:hover {
     border: 2px solid $button-green-effects;
@@ -201,7 +206,8 @@ ul {
 
 %button-dark {
   background-color: $yellow;
-
+  @include transition(background-color);
+  
   &:hover {
     background-color: $button-green-effects;
   }
