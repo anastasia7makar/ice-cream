@@ -94,6 +94,7 @@ ul {
   background-color: #84a178;
   background-position: center;
   background-size: 140%;
+  background-attachment: fixed;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {

@@ -96,6 +96,7 @@ ul {
   background-color: $green;
   background-position: center;
   background-size: 140%;
+  background-attachment: fixed;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
