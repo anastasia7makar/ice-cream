@@ -118,7 +118,7 @@ ul {
     min-width: 1600px;
     max-width: 100%;
     min-height: 600px;
-    background-image: url("../images/images-for-desktop/backgroud-desktop.png");
+    background-image: url("../images/background-preload.png");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {

@@ -120,7 +120,7 @@ ul {
     min-width: 1600px;
     max-width: 100%;
     min-height: 600px;
-    background-image: url('../images/images-for-desktop/backgroud-desktop.png');
+    background-image: url('../images/background-preload.png');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       & {
