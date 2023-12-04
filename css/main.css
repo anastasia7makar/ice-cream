@@ -115,7 +115,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    max-width: 1600px;
+    min-width: 1600px;
+    max-width: 100%;
     min-height: 600px;
     background-image: url("../images/images-for-desktop/backgroud-desktop.png");
   }
