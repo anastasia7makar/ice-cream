@@ -96,6 +96,20 @@
   }
 }
 
+.footer__social-link {
+  color: $green;
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $primary-white;
+  }
+}
+.footer__social-icon {
+  fill: currentColor;
+}
+
 .footer__contact-tel {
   margin-top: 20px;
   display: flex;
